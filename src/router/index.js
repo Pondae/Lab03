@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import EventList from "../views/EventList.vue";
 import About from '../views/About.vue';
 import Category from '../views/Category.vue';
+import ShowStd from '../views/ShowStd.vue';
 
 const routes = [
   {
@@ -18,6 +19,11 @@ const routes = [
     path: "/category",
     name: "Category",
     component: Category,
+  },
+  {
+    path: "/showstd",
+    name: "ShowStd",
+    component: ShowStd,
   },
 ];
 
