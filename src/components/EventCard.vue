@@ -2,10 +2,12 @@
   <div class="event-card">
     <span>@{{ event.time }} on {{ event.date }}</span>
     <h4>{{ event.title }}</h4>
+    <EventCard2 :key="event.id" :event="event" />
   </div>
 </template>
 
 <script>
+import EventCard2 from "@/components/EventCard2.vue";
 export default {
     name: 'EventCard',
     props: {
@@ -14,6 +16,9 @@ export default {
             required: true,
         },
     },
+    components: {
+        EventCard2,
+    }
 }
 </script>
 
