@@ -18,7 +18,4 @@ export default {
 </script>
 
 <style scoped>
-.event-card2 {
-  text-align: right;
-}
 </style>
